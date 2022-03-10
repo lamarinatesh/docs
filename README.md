@@ -1,28 +1,28 @@
-# Introduction of Tornado Cash
+# Introduction to Tornado Cash
 
 ![](.gitbook/assets/image.png)
 
 Tornado Cash is a **fully decentralized** **non-custodial** **protocol** allowing private transactions in the crypto-space.
 
-As a decentralized protocol, Tornado.Cash smart contracts have been implemented within the Ethereum blockchain which makes them immutable. They can neither be changed or tampered with. Therefore, nobody - including initial developers - can modify or shut them down. All governance and mining smart contracts are deployed by the community in a decentralized manner.
+As a decentralized protocol, Tornado.Cash smart contracts have been implemented within the Ethereum blockchain, making them immutable. They can neither be changed nor tampered with. Therefore, nobody - including the original developers - can modify or shut them down. All governance and mining smart contracts are deployed by the community in a decentralized manner.
 
-As a non-custodial protocol, users keep custody of their cryptocurrencies while operating Tornado.Cash. Indeed, at each deposit, they are provided with the private key enabling the access to the deposited funds, which gives users complete control over their assets.
+As a non-custodial protocol, users keep custody of their cryptocurrencies while operating Tornado.Cash. This means that at each deposit, they are provided with the private key enabling the access to the deposited funds, which gives users complete control over their assets.
 
-## How privacy is achieved?
+## How is privacy achieved?
 
-Tornado Cash improves transaction privacy by breaking the on-chain link between source and destination addresses. It uses a smart contract that accepts ETH & other tokens deposits from one address and enable their withdrawal from a different address.
+Tornado Cash improves transaction privacy by breaking the on-chain link between source and destination addresses. It uses a smart contract that accepts ETH & other tokens deposits from one address and enables their withdrawal from a different address.
 
-To preserve privacy, few good practices are in order, such as the use of a relayer for gas payments to withdraw funds towards an address with no pre-existing balance.
+To maximize privacy, several steps are recommended, such as the use of a relayer for gas payments to withdraw funds from an address with no pre-existing balance.
 
 More details are available in _Behind the scenes:_ [_How does Tornado.Cash work?_](general/how-does-tornado.cash-work.md) & [Tips to remain anonymous](general/tips-to-remain-anonymous.md).
 
-## Where is Tornado.Cash at?
+## Where does Tornado.Cash operate?
 
-Since its inception in 2019, Tornado Cash has been operating **on the Ethereum blockchain**. The protocol has been offering diversified fixed amount pools for six tokens (ETH, DAI, cDAI, USDC, USDT & WBTC) handled by the Ethereum blockchain.
+Since its inception in 2019, Tornado Cash has been operating **on the Ethereum blockchain**. The protocol has been offering diversified fixed-amount pools for six tokens (ETH, DAI, cDAI, USDC, USDT & WBTC) handled by the Ethereum blockchain.
 
-From June 2021, in addition to the Ethereum blockchain, Tornado Cash smart contracts **have also been deployed on other side-chains & blockchains**. Theses deployments enabled the tool to either support new tokens or benefit from Layer-2 advantages such as faster and cheaper transactions.
+Since June 2021, in addition to the Ethereum blockchain, Tornado Cash smart contracts **have also been deployed on other side-chains & blockchains**. These deployments have enabled the tool to either support new tokens or benefit from Layer-2 advantages such as faster and cheaper transactions.
 
-Therefore, as of today, Tornado Cash is currently operating on:
+As of today, Tornado Cash is currently operating on:
 
 * **Ethereum Blockchain** : **ETH** (Ethereum), **DAI** (Dai), **cDAI** (Compound Dai), **USDC** (USD Coin), **USDT** (Tether) & **WBTC** (Wrapped Bitcoin),
 * **Binance Smart Chain**: **BNB** (Binance Coin),
@@ -40,22 +40,22 @@ _More information about_ [_Anonymity mining_](tornado-cash-classic/anonymity-min
 
 **Thanks to the TORN token, Tornado Cash users can actively participate in shaping the protocol**. The community has a strong weight regarding the evolution of Tornado Cash and the improvement of its features. Indeed, protocol parameters & token distribution are completely under the community’s control through this governance.
 
-All pools mentioned above can be accessed on [tornadocash.eth.link](https://tornadocash.eth.link). They operates **under the principle of fixed amount deposits & withdrawals**. It means that each token has 2 to 4 different pools, allowing transactions of only 2 to 4 different fixed amounts _(e.g. ETH has four different pools, one for each of these amounts: 0.1, 1, 10 & 100 ETH)_.
+All pools mentioned above can be accessed on [tornadocash.eth.link](https://tornadocash.eth.link). They operate **under the principle of fixed-amount deposits & withdrawals**. It means that each token has 2 to 4 different pools, allowing transactions of only 2 to 4 different fixed amounts _(e.g. ETH has four different pools, one for each of these amounts: 0.1, 1, 10 & 100 ETH)_.
 
 ### Tornado Cash Nova
 
-With the [**release of Tornado Cash Nova** (beta version) on December 2021](https://tornado-cash.medium.com/tornado-cash-introduces-arbitrary-amounts-shielded-transfers-8df92d93c37c), an **upgraded pool with unique new features** has been added to the protocol. Users are no longer constrained by fixed amount transactions. With the addition of Tornado Cash Nova, they can benefit from the use of **an arbitrary amount pool & shielded transfers**.
+With the [**release of Tornado Cash Nova** (beta version) on December 2021](https://tornado-cash.medium.com/tornado-cash-introduces-arbitrary-amounts-shielded-transfers-8df92d93c37c), an **upgraded pool with unique new features** has been added to the protocol. Users are no longer constrained by fixed-amount transactions. With the addition of Tornado Cash Nova, they can benefit from the use of **a pool with arbitrary amounts & shielded transfers**.
 
 Tornado Cash Nova operates on the Gnosis Chain (former xDai Chain) as a Layer2 to optimize speed and cost. It allows **deposits and withdrawals of completely customized amounts in ETH**. This pool also enables shielded transactions where users can **transfer the custody of their token while remaining in the pool**.
 
-Tornado Cash Nova (beta version) can be accessed on [nova.tornadocash.eth.link](https://nova.tornadocash.eth.link). You can find further informations related to the functioning of Tornado Cash Nova in the dedicated section of our docs.
+Tornado Cash Nova (beta version) can be accessed on [nova.tornadocash.eth.link](https://nova.tornadocash.eth.link). You can find additional information related to the functioning of Tornado Cash Nova in the dedicated section of our docs.
 
 ## How does Tornado.Cash run?
 
-[Codes behind Tornado.Cash functioning](https://github.com/tornadocash) - smart contacts, circuits & toolchain - are fully **open sourced.** Working as a DAO (Decentralized Autonomous Organization), Tornado.Cash governance and mining smart contracts are deployed by its community.
+[Codes behind Tornado.Cash functioning](https://github.com/tornadocash) - smart contacts, circuits & toolchain - are fully **open-sourced.** Working as a DAO (Decentralized Autonomous Organization), Tornado.Cash governance and mining smart contracts are deployed by its community.
 
-The protocol also functions with zk-SNARK, which enables zero-knowledge proofs allowing users to demonstrate possession of information without needing to reveal it. The use of this technology is based **on open source research made by Zcash team with the help of Ethereum community**. To set-up zk-SNARK initial keys, Tornado.Cash[ Trusted Setup Community](https://tornado-cash.medium.com/tornado-cash-trusted-setup-ceremony-b846e1e00be1) was launched in May 2020 & accounted [for 1114 contributions](https://tornado-cash.medium.com/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa). This significant number of contributors makes it impossible to compromise the protocol by faking zero-knowledge proofs.
+The protocol also functions via zk-SNARK, which enables zero-knowledge proofs allowing users to demonstrate possession of information without needing to reveal it. The use of this technology is based **on open-source research made by Zcash team with the help of the Ethereum community**. To set up zk-SNARK initial keys, Tornado.Cash[ Trusted Setup Community](https://tornado-cash.medium.com/tornado-cash-trusted-setup-ceremony-b846e1e00be1) was launched in May 2020 & accounts [for 1114 contributions](https://tornado-cash.medium.com/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa). This significant number of contributors makes it impossible to compromise the protocol by faking zero-knowledge proofs.
 
-User interface is hosted on **IPFS** (InterPlanetary File System) by the community, minimizing risks of data being deleted. Indeed, the interface will work as long as at least one user is hosting it.
+User interface is hosted on **IPFS** (InterPlanetary File System) by the community, minimizing the risks of data deletion. Indeed, the interface will work as long as at least one user is hosting it.
 
 _Written & updated by_ [_@ayefda_](https://torn.community/u/ayefda)
